@@ -1,0 +1,73 @@
+1)Ans:-
+
+     tup=(1,'Deepu',3,4,5)
+     print(len(tup))
+
+2)Ans:-
+
+      tup = (5, 3, 48, 41, 32, 98, 10, 0)
+a = len(tup)
+i = 0
+largest = tup[0]
+while (i < a - 1):
+    if (largest < tup[i + 1]):
+        largest = tup[i + 1]
+    else:
+        large = largest
+    i = i + 1
+print('largest element is', largest)
+j = 1
+small = tup[0]
+while (j < a):
+    if (small > tup[j]):
+        small = tup[j]
+    else:
+        small = small
+    j = j + 1
+print("smallest element is", small)
+
+
+3)Ans:-
+
+      tup=(1,8,2,5,9)
+      p=1
+      for i in range(len(tup)):
+          p=p*tup[i]
+      print(p)
+
+4)Ans:-
+  
+     a={1,4,8,9}
+     b={4,5,7,9}
+     c=a.union(b)
+     d=a.intersection(b)
+     e=a.difference(b)
+     print(c)
+     print(d)
+     print(e)
+
+5)Ans:-
+
+
+     dic={}
+i=0
+while i<10:
+    name=input("enter name: ")
+    marks=input("enter marks: ")
+    dic[name]=marks
+    i+=1
+print(dic)
+
+
+
+6)Ans:-
+
+     dict={}
+     i=0
+     while(i<10):
+         name=input("Enter the name")
+         marks=input("Enter the marks")
+         dict[name]=marks
+         i=i+1
+     print(sorted(zip(dict.keys(),dict.values())))
+     print(sorted(zip(dict.values(),dict.keys())))
